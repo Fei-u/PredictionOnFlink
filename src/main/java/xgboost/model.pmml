@@ -1,0 +1,3701 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_3" xmlns:data="http://jpmml.org/jpmml-model/InlineTable" version="4.4">
+	<Header>
+		<Application name="SkLearn2PMML package" version="0.98.0"/>
+		<Timestamp>2023-08-29T08:54:24Z</Timestamp>
+	</Header>
+	<MiningBuildTask>
+		<Extension name="repr">PMMLPipeline(steps=[('classifier', LGBMRegressor(feature_fraction=0.7, max_depth=7, metrics=['mse', 'mae'],
+              n_estimators=200, num_leaves=200, random_state=20, reg_alpha=0.5,
+              reg_lambda=0.8, subsample=0.5))])</Extension>
+	</MiningBuildTask>
+	<DataDictionary>
+		<DataField name="y" optype="continuous" dataType="double"/>
+		<DataField name="x1" optype="continuous" dataType="double"/>
+		<DataField name="x2" optype="continuous" dataType="double"/>
+		<DataField name="x3" optype="continuous" dataType="double"/>
+		<DataField name="x4" optype="continuous" dataType="double"/>
+		<DataField name="x5" optype="continuous" dataType="double"/>
+		<DataField name="x8" optype="continuous" dataType="double"/>
+		<DataField name="x10" optype="continuous" dataType="double"/>
+		<DataField name="x13" optype="continuous" dataType="double"/>
+		<DataField name="x14" optype="continuous" dataType="double"/>
+		<DataField name="x16" optype="continuous" dataType="double"/>
+		<DataField name="x17" optype="continuous" dataType="double"/>
+		<DataField name="x18" optype="continuous" dataType="double"/>
+		<DataField name="x19" optype="continuous" dataType="double"/>
+		<DataField name="x20" optype="continuous" dataType="double"/>
+		<DataField name="x21" optype="continuous" dataType="double"/>
+		<DataField name="x22" optype="continuous" dataType="double"/>
+		<DataField name="x23" optype="continuous" dataType="double"/>
+		<DataField name="x24" optype="continuous" dataType="double"/>
+		<DataField name="x25" optype="continuous" dataType="double"/>
+	</DataDictionary>
+	<MiningModel functionName="regression" algorithmName="LightGBM">
+		<MiningSchema>
+			<Extension name="X-FeatureImportances">
+				<InlineTable>
+					<Extension name="numberOfImportances" value="19"/>
+					<Extension name="numberOfNonZeroImportances" value="19"/>
+					<Extension name="sumOfImportances" value="774.0"/>
+					<Extension name="minImportance" value="1.0"/>
+					<Extension name="maxImportance" value="356.0"/>
+					<row>
+						<data:name>x18</data:name>
+						<data:importance>20.0</data:importance>
+					</row>
+					<row>
+						<data:name>x19</data:name>
+						<data:importance>11.0</data:importance>
+					</row>
+					<row>
+						<data:name>x16</data:name>
+						<data:importance>2.0</data:importance>
+					</row>
+					<row>
+						<data:name>x17</data:name>
+						<data:importance>1.0</data:importance>
+					</row>
+					<row>
+						<data:name>x14</data:name>
+						<data:importance>8.0</data:importance>
+					</row>
+					<row>
+						<data:name>x25</data:name>
+						<data:importance>134.0</data:importance>
+					</row>
+					<row>
+						<data:name>x23</data:name>
+						<data:importance>16.0</data:importance>
+					</row>
+					<row>
+						<data:name>x13</data:name>
+						<data:importance>3.0</data:importance>
+					</row>
+					<row>
+						<data:name>x24</data:name>
+						<data:importance>119.0</data:importance>
+					</row>
+					<row>
+						<data:name>x4</data:name>
+						<data:importance>17.0</data:importance>
+					</row>
+					<row>
+						<data:name>x10</data:name>
+						<data:importance>1.0</data:importance>
+					</row>
+					<row>
+						<data:name>x21</data:name>
+						<data:importance>9.0</data:importance>
+					</row>
+					<row>
+						<data:name>x3</data:name>
+						<data:importance>3.0</data:importance>
+					</row>
+					<row>
+						<data:name>x22</data:name>
+						<data:importance>356.0</data:importance>
+					</row>
+					<row>
+						<data:name>x2</data:name>
+						<data:importance>7.0</data:importance>
+					</row>
+					<row>
+						<data:name>x1</data:name>
+						<data:importance>13.0</data:importance>
+					</row>
+					<row>
+						<data:name>x20</data:name>
+						<data:importance>19.0</data:importance>
+					</row>
+					<row>
+						<data:name>x8</data:name>
+						<data:importance>1.0</data:importance>
+					</row>
+					<row>
+						<data:name>x5</data:name>
+						<data:importance>34.0</data:importance>
+					</row>
+				</InlineTable>
+			</Extension>
+			<MiningField name="y" usageType="target"/>
+			<MiningField name="x1" importance="13.0"/>
+			<MiningField name="x2" importance="7.0"/>
+			<MiningField name="x3" importance="3.0"/>
+			<MiningField name="x4" importance="17.0"/>
+			<MiningField name="x5" importance="34.0"/>
+			<MiningField name="x8" importance="1.0"/>
+			<MiningField name="x10" importance="1.0"/>
+			<MiningField name="x13" importance="3.0"/>
+			<MiningField name="x14" importance="8.0"/>
+			<MiningField name="x16" importance="2.0"/>
+			<MiningField name="x17" importance="1.0"/>
+			<MiningField name="x18" importance="20.0"/>
+			<MiningField name="x19" importance="11.0"/>
+			<MiningField name="x20" importance="19.0"/>
+			<MiningField name="x21" importance="9.0"/>
+			<MiningField name="x22" importance="356.0"/>
+			<MiningField name="x23" importance="16.0"/>
+			<MiningField name="x24" importance="119.0"/>
+			<MiningField name="x25" importance="134.0"/>
+		</MiningSchema>
+		<Segmentation multipleModelMethod="sum" missingPredictionTreatment="returnMissing">
+			<Segment id="1">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="1.4939932935680376">
+						<True/>
+						<Node score="1.5896272195840064">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.715"/>
+							<Node score="1.640706467535792">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.1510000000000002"/>
+								<Node score="1.6685574454312415">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.395000000000001"/>
+								</Node>
+							</Node>
+							<Node score="1.6105633154913939">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.9190000000000003"/>
+								<Node score="1.62223466146629">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.0210000000000004"/>
+								</Node>
+							</Node>
+							<Node score="1.5990275895109334">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.7970000000000004"/>
+							</Node>
+						</Node>
+						<Node score="1.5461884174736245">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2670000000000001"/>
+							<Node score="1.5661719912153516">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4790000000000003"/>
+								<Node score="1.5759460585504053">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5930000000000002"/>
+									<Node score="1.5819761767765428">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.643"/>
+									</Node>
+								</Node>
+								<Node score="1.571249529856446">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5430000000000004"/>
+									<Node score="1.571772689264978">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5670000000000004"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="1.5559006258899633">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3750000000000002"/>
+								<Node score="1.561193947590049">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.4390000000000003"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="1.5267971570139618">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.0400000000000003"/>
+							<Node score="1.5377135228156522">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.1770000000000003"/>
+							</Node>
+						</Node>
+						<Node score="1.5107366826995754">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.8790000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="2">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="-0.07429067720109084">
+						<True/>
+						<Node score="0.01410393976671173">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.707"/>
+							<Node score="0.06227863751736892">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.1320000000000006"/>
+								<Node score="0.0885561133424441">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.4210000000000003"/>
+								</Node>
+							</Node>
+							<Node score="0.03233762676345891">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.8870000000000002"/>
+								<Node score="0.04366971738048909">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.9880000000000004"/>
+								</Node>
+							</Node>
+							<Node score="0.021512868699475465">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.7670000000000001"/>
+							</Node>
+						</Node>
+						<Node score="-0.024707732510215626">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.247"/>
+							<Node score="-0.0066850238775356926">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.465"/>
+								<Node score="0.0025119866597755206">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5810000000000002"/>
+									<Node score="0.00808988112290833">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.6270000000000004"/>
+									</Node>
+								</Node>
+								<Node score="-0.0012373311360725308">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5310000000000004"/>
+									<Node score="0.0">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5670000000000004"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="-0.014201866289368911">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3510000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.04289760356112569">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.0110000000000003"/>
+							<Node score="-0.03313731532857723">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.1470000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.05741918239914915">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.8370000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="3">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="-0.061280439365400036">
+						<True/>
+						<Node score="0.014699204182265065">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.7009999999999998"/>
+							<Node score="0.05952603931261881">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.1790000000000007"/>
+								<Node score="0.08282896263817638">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.4690000000000007"/>
+								</Node>
+							</Node>
+							<Node score="0.032971983013848065">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.9320000000000002"/>
+								<Node score="0.042927857513064584">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.0480000000000005"/>
+								</Node>
+							</Node>
+							<Node score="0.023593926669231484">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.8110000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.019588175495230817">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2790000000000001"/>
+							<Node score="-0.0033243677367965786">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4890000000000003"/>
+								<Node score="0.0032054190405734306">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.6010000000000002"/>
+									<Node score="0.007300968628888037">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.6369999999999998"/>
+									</Node>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5530000000000002"/>
+									<Node score="1.5776137423388997E-4">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="-0.010296887164795857">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3910000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.0352068011064546">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.0670000000000004"/>
+							<Node score="-0.026477563706107606">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.195"/>
+							</Node>
+						</Node>
+						<Node score="-0.047584878220930854">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.9090000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="4">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="-0.054115486585281106">
+						<True/>
+						<Node score="0.01460263596343709">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.7260000000000002"/>
+							<Node score="0.056524368585182866">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.2170000000000005"/>
+								<Node score="0.07877762044282785">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.517"/>
+								</Node>
+							</Node>
+							<Node score="0.031117111473748633">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.953"/>
+								<Node score="0.040310778817452424">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.0700000000000007"/>
+								</Node>
+							</Node>
+							<Node score="0.022946287162047774">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.8310000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.01589137073785929">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2990000000000004"/>
+							<Node score="-0.0020796532564569046">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.5060000000000002"/>
+								<Node score="0.00377320441576193">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.6110000000000004"/>
+									<Node score="0.008161709163656812">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.659"/>
+									</Node>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5610000000000002"/>
+									<Node score="7.782518378201318E-4">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5770000000000002"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="-0.00810944031121985">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4110000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-0.03103627549044451">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.0740000000000003"/>
+							<Node score="-0.022904636887389297">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.207"/>
+							</Node>
+						</Node>
+						<Node score="-0.041679916549601875">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.9230000000000002"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="5">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.059734299685220295">
+						<True/>
+						<Node score="0.010126861790738682">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.695"/>
+							<Node score="0.04571723624861285">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.198000000000001"/>
+								<Node score="0.05839223909451524">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.369"/>
+									<Node score="0.07635597080366383">
+										<SimplePredicate field="x22" operator="greaterThan" value="2.5890000000000004"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="0.025685629573354404">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.9030000000000002"/>
+								<Node score="0.0349523282100826">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.0360000000000005"/>
+								</Node>
+							</Node>
+							<Node score="0.01669111491545387">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.7740000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.018876907257538923">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.235"/>
+							<Node score="-0.005515093481252817">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4490000000000003"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5670000000000004"/>
+									<Node score="0.0046213440977597746">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.6040000000000003"/>
+									</Node>
+									<Node score="4.412407300412449E-4">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5770000000000002"/>
+									</Node>
+								</Node>
+								<Node score="-0.001052172298020706">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5210000000000001"/>
+								</Node>
+							</Node>
+							<Node score="-0.01131479693960997">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3350000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.0328788139514002">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.989"/>
+							<Node score="-0.02539413647422799">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.1270000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.04312700761417099">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.7850000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="6">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="-0.04806220351339697">
+						<True/>
+						<Node score="0.012183693598159582">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.7330000000000003"/>
+							<Node score="0.04778470339943896">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.2450000000000006"/>
+								<Node score="0.06650117371871973">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.5470000000000006"/>
+								</Node>
+							</Node>
+							<Node score="0.031231309098550698">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.969"/>
+							</Node>
+							<Node score="0.019623720911305556">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.8410000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.01230923865714919">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.3070000000000004"/>
+							<Node score="-0.0012869552625873225">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.5150000000000003"/>
+								<Node score="0.005741932825943673">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.6180000000000003"/>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+									<Node score="0.0012147645126484958">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5810000000000002"/>
+									</Node>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5610000000000002"/>
+								</Node>
+							</Node>
+							<Node score="-0.006012417068820895">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4200000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.024719949957786824">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.0850000000000002"/>
+							<Node score="-0.018206322444723796">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.215"/>
+							</Node>
+						</Node>
+						<Node score="-0.03526206568024958">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.8650000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="7">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.04922583661739181">
+						<True/>
+						<Node score="0.010828936879650997">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.6850000000000003"/>
+							<Node score="0.03407474087037791">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.1250000000000004"/>
+								<Node score="0.047097730076211125">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.345"/>
+									<Node score="0.06323774576744187">
+										<SimplePredicate field="x25" operator="greaterThan" value="2.6250000000000004"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="0.022612771763342296">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.885"/>
+							</Node>
+						</Node>
+						<Node score="-0.014085761316253853">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.2650000000000003"/>
+							<Node score="-0.0035913190921025295">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.4550000000000003"/>
+								<Node score="3.0636821993070267E-4">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.5650000000000002"/>
+									<Node score="0.0037716700718923414">
+										<SimplePredicate field="x25" operator="greaterThan" value="1.6150000000000004"/>
+									</Node>
+								</Node>
+								<Node score="-2.4772330568318237E-4">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.5250000000000001"/>
+								</Node>
+							</Node>
+							<Node score="-0.007891680230386555">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.3550000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.025463747209770585">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.0050000000000001"/>
+							<Node score="-0.01883624400166696">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.1450000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.03496238861997641">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.7850000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="8">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.04324458892812435">
+						<True/>
+						<Node score="0.010486600755056388">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.7440000000000002"/>
+							<Node score="0.03974267887779215">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.2630000000000003"/>
+								<Node score="0.05488110753904166">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.565"/>
+								</Node>
+							</Node>
+							<Node score="0.026378174296942267">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.997"/>
+							</Node>
+							<Node score="0.016608422354272956">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.8490000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.009178131025066899">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.3150000000000002"/>
+							<Node score="-5.843643303225669E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.5350000000000004"/>
+								<Node score="0.0052221419012292904">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.6330000000000002"/>
+								</Node>
+								<Node score="0.0012053978516473084">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5770000000000002"/>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5670000000000004"/>
+								</Node>
+							</Node>
+							<Node score="-0.004327123007007362">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4310000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-0.02084972881125301">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.0510000000000004"/>
+							<Node score="-0.014798489023638034">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.2010000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-0.029991925385075353">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.8250000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="9">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.030810190777296926">
+						<True/>
+						<Node score="0.00897632068905578">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.7050000000000003"/>
+							<Node score="0.02782662293661839">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.1150000000000007"/>
+								<Node score="0.038664168207555694">
+									<SimplePredicate field="x24" operator="greaterThan" value="2.3350000000000004"/>
+									<Node score="0.051537639270090085">
+										<SimplePredicate field="x24" operator="greaterThan" value="2.5850000000000004"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="0.017874660689182795">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.8950000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.010618541130294267">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.2850000000000004"/>
+							<Node score="-0.002124193107445735">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.485"/>
+								<Node score="0.0">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.5950000000000004"/>
+									<Node score="0.002902252403120105">
+										<SimplePredicate field="x24" operator="greaterThan" value="1.5850000000000002"/>
+									</Node>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.5450000000000002"/>
+								</Node>
+							</Node>
+							<Node score="-0.0058109728579043875">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.3750000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.020879958592280992">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.9650000000000001"/>
+							<Node score="-0.014954864883608985">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.1650000000000003"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="10">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.028286492297914835">
+						<True/>
+						<Node score="0.0071475463435820485">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.6650000000000003"/>
+							<Node score="0.02451569522879478">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.0850000000000004"/>
+								<Node score="0.034554857074189246">
+									<SimplePredicate field="x24" operator="greaterThan" value="2.3150000000000004"/>
+									<Node score="0.04647800863877824">
+										<SimplePredicate field="x24" operator="greaterThan" value="2.5850000000000004"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="0.015337666395099314">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.8350000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.011179369461846722">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.2250000000000003"/>
+							<Node score="-0.003372168678435541">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.4350000000000003"/>
+								<Node score="0.0">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.5550000000000004"/>
+									<Node score="0.0019761871090983357">
+										<SimplePredicate field="x24" operator="greaterThan" value="1.5850000000000002"/>
+									</Node>
+								</Node>
+								<Node score="-6.606565969065416E-4">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.5050000000000001"/>
+								</Node>
+							</Node>
+							<Node score="-0.006672342125763441">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.3250000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.020181478259936228">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.9450000000000001"/>
+							<Node score="-0.015117020832895742">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.1050000000000002"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="11">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.035336197065792496">
+						<True/>
+						<Node score="0.009569662873624051">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.7550000000000001"/>
+							<Node score="0.026101092966244296">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.2350000000000008"/>
+								<Node score="0.03661827359947872">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.4650000000000003"/>
+								</Node>
+							</Node>
+							<Node score="0.017939418444839282">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.985"/>
+							</Node>
+						</Node>
+						<Node score="-0.008018431501499702">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.3050000000000004"/>
+							<Node score="-9.88160578843421E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.5050000000000001"/>
+								<Node score="0.003569667928265099">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.635"/>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.5750000000000004"/>
+									<Node score="6.507893055421256E-4">
+										<SimplePredicate field="x25" operator="greaterThan" value="1.5850000000000002"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="-0.004180249131507695">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.405"/>
+							</Node>
+						</Node>
+						<Node score="-0.015960164069880833">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.0350000000000004"/>
+							<Node score="-0.01147488567080359">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.1850000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-0.022429382729977118">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.7650000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="12">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.025563375880001626">
+						<True/>
+						<Node score="0.006211978670225365">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.7550000000000001"/>
+							<Node score="0.02704428896585115">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.2850000000000006"/>
+								<Node score="0.039765478012948066">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.6650000000000005"/>
+								</Node>
+							</Node>
+							<Node score="0.017513762899890324">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.015"/>
+							</Node>
+							<Node score="0.010419364810858691">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.8250000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.006204732623102383">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.3250000000000004"/>
+							<Node score="-4.350473254361242E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.5250000000000001"/>
+								<Node score="0.0033827162974304397">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.6450000000000002"/>
+								</Node>
+								<Node score="7.248543878244032E-4">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.5850000000000002"/>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.5750000000000004"/>
+								</Node>
+							</Node>
+							<Node score="-0.0030155749792109467">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.4350000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-0.012794230896845352">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.1050000000000002"/>
+							<Node score="-0.009444647541536538">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.235"/>
+							</Node>
+						</Node>
+						<Node score="-0.01797094266826623">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.9050000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="13">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.03033193595269147">
+						<True/>
+						<Node score="0.003954960987188512">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.6850000000000003"/>
+							<Node score="0.020133580778213176">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.1550000000000007"/>
+								<Node score="0.029549493945555318">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.4450000000000007"/>
+								</Node>
+							</Node>
+							<Node score="0.013103533182224444">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.925"/>
+							</Node>
+							<Node score="0.007456835223680117">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.7650000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-0.0075904750174488125">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.2450000000000003"/>
+							<Node score="-0.0018058884143483983">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.465"/>
+								<Node score="0.0">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.5550000000000004"/>
+									<Node score="0.0013958246549259624">
+										<SimplePredicate field="x25" operator="greaterThan" value="1.5950000000000004"/>
+									</Node>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.5550000000000004"/>
+								</Node>
+							</Node>
+							<Node score="-0.004257706759103353">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.3750000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.014194865440319835">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.9750000000000001"/>
+							<Node score="-0.010404284164143142">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.1250000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.019196388927268222">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.7400000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="14">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.01930485744626856">
+						<True/>
+						<Node score="0.004437737104084914">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.675"/>
+							<Node score="0.01583488327116962">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.0850000000000004"/>
+								<Node score="0.023039831540299694">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.3240000000000003"/>
+									<Node score="0.03462440354360951">
+										<SimplePredicate field="x22" operator="greaterThan" value="2.6740000000000004"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="0.009481170835594336">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.8190000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.007432877771181364">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2250000000000003"/>
+							<Node score="-0.0019577557992067982">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4450000000000003"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5610000000000002"/>
+									<Node score="0.0011812698162168129">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5870000000000004"/>
+									</Node>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5370000000000001"/>
+								</Node>
+							</Node>
+							<Node score="-0.004253284879618309">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3390000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.011780915151394207">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.9550000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="15">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.023491543312759506">
+						<True/>
+						<Node score="0.006930821178126737">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.7530000000000003"/>
+							<Node score="0.019984079060049415">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.2750000000000004"/>
+								<Node score="0.030449089162596844">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.6530000000000005"/>
+								</Node>
+							</Node>
+							<Node score="0.013048326346459197">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.027"/>
+							</Node>
+						</Node>
+						<Node score="-0.005078067268383363">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2950000000000002"/>
+							<Node score="-5.029030158354143E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4950000000000003"/>
+								<Node score="4.820879492172717E-4">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.6150000000000004"/>
+									<Node score="0.002706328135735186">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.651"/>
+									</Node>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5610000000000002"/>
+									<Node score="3.25704010089163E-5">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="-0.002638509859177674">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.401"/>
+							</Node>
+						</Node>
+						<Node score="-0.008316447351180518">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.0990000000000004"/>
+						</Node>
+						<Node score="-0.013899285288736166">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.7950000000000002"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="16">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.01609926055468137">
+						<True/>
+						<Node score="0.004033889965413613">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.6690000000000003"/>
+							<Node score="0.01521292239987503">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.1710000000000007"/>
+								<Node score="0.023181221266743712">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.4890000000000008"/>
+								</Node>
+							</Node>
+							<Node score="0.009352340480541668">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.897"/>
+							</Node>
+						</Node>
+						<Node score="-0.00634129739360411">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.1870000000000003"/>
+							<Node score="-0.0017562084750149987">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4270000000000003"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5530000000000002"/>
+									<Node score="8.300070489531899E-4">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5810000000000002"/>
+									</Node>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.5350000000000004"/>
+								</Node>
+							</Node>
+							<Node score="-0.003760503470347733">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3250000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.0100723428125537">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.9370000000000002"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="17">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.021709101102432283">
+						<True/>
+						<Node score="0.005525123854851046">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.7610000000000003"/>
+							<Node score="0.016540079597075274">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.2900000000000005"/>
+								<Node score="0.026482582092285156">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.6950000000000007"/>
+								</Node>
+							</Node>
+							<Node score="0.010478279509619624">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.0050000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-0.004170860979960909">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2870000000000001"/>
+							<Node score="-3.2318967147576213E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4950000000000003"/>
+								<Node score="0.0018456339187056408">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.6150000000000004"/>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5670000000000004"/>
+								</Node>
+							</Node>
+							<Node score="-0.002098341621232527">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4070000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-0.007314084821255844">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.0210000000000001"/>
+						</Node>
+						<Node score="-0.012069002989478208">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.7400000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="18">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.020005701878748904">
+						<True/>
+						<Node score="0.00430194995729155">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.735"/>
+							<Node score="0.013812974721544306">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.265"/>
+								<Node score="0.019972151932231882">
+									<SimplePredicate field="x24" operator="greaterThan" value="2.515"/>
+								</Node>
+							</Node>
+							<Node score="0.00896843327235152">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.945"/>
+							</Node>
+						</Node>
+						<Node score="-0.004074301110218254">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.2550000000000001"/>
+							<Node score="-5.266530360103033E-4">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.4750000000000003"/>
+								<Node score="0.0014725076584136876">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.5950000000000004"/>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.5550000000000004"/>
+								</Node>
+							</Node>
+							<Node score="-0.0020923266066257807">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.385"/>
+							</Node>
+						</Node>
+						<Node score="-0.008282164894929752">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.9750000000000001"/>
+							<Node score="-0.005773470032523575">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.135"/>
+							</Node>
+						</Node>
+						<Node score="-0.0111669952084926">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.7050000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="19">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="-0.014645534715220383">
+						<True/>
+						<Node score="0.0021920805834068926">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.6620000000000001"/>
+							<Node score="0.009659946830818463">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.0850000000000004"/>
+								<Node score="0.015511038765569269">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.3550000000000004"/>
+								</Node>
+							</Node>
+							<Node score="0.005378420264113417">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.8010000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.00465189798226346">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.1690000000000003"/>
+							<Node score="-8.943801363629052E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4530000000000003"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5610000000000002"/>
+									<Node score="4.327180521815506E-4">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="-0.0025086648694371536">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3290000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.008174638852907984">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.8510000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="20">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.014498617810507618">
+						<True/>
+						<Node score="0.0018237255956017853">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.6620000000000001"/>
+							<Node score="0.008659481310499676">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.0650000000000004"/>
+								<Node score="0.013966649428042242">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.3550000000000004"/>
+								</Node>
+							</Node>
+							<Node score="0.004652200726238769">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.7890000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.004404197749913694">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.1330000000000002"/>
+							<Node score="-0.0011087614637563688">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4270000000000003"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5530000000000002"/>
+									<Node score="3.89644292747182E-4">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="-0.002454848529057617">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3190000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.007907887487199006">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.8210000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="21">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.009667742271913742">
+						<True/>
+						<Node score="0.002118950245194784">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.6620000000000001"/>
+							<Node score="0.01007617379109245">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.2030000000000007"/>
+								<Node score="0.01971794749822533">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.7010000000000005"/>
+								</Node>
+							</Node>
+							<Node score="0.005572025711378026">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.8570000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.0033923476729725483">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2210000000000003"/>
+							<Node score="-4.0704904400333574E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4730000000000003"/>
+								<Node score="3.508581851641152E-4">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.5650000000000002"/>
+								</Node>
+							</Node>
+							<Node score="-0.0017379158388620775">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3630000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.005619371227466803">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.9490000000000002"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="22">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.014417028584338111">
+						<True/>
+						<Node score="0.0019462544647655608">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.6800000000000002"/>
+							<Node score="0.007762048110238971">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.0970000000000004"/>
+								<Node score="0.013268261527021728">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.4950000000000006"/>
+								</Node>
+							</Node>
+							<Node score="0.004300773427447026">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.8650000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.002356189271156881">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2550000000000001"/>
+							<Node score="-1.9138003408041197E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4850000000000003"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+									<Node score="5.174844980399637E-4">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5870000000000004"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4730000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-0.004740288649580788">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.9670000000000001"/>
+						</Node>
+						<Node score="-0.007502220768717889">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.7140000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="23">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.013028231953535606">
+						<True/>
+						<Node score="0.0011981674166315277">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.651"/>
+							<Node score="0.005851326350983383">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.055"/>
+								<Node score="0.009044259912703669">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.3070000000000004"/>
+									<Node score="0.016930924728512764">
+										<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="0.003281428789573375">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.7850000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.002969602129274034">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.1210000000000002"/>
+							<Node score="-9.380680108563533E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.4150000000000003"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5490000000000006"/>
+									<Node score="1.4247283936734493E-4">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+									</Node>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="-0.006151488778784237">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.7140000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="24">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.010837699782538724">
+						<True/>
+						<Node score="0.0017496561145665286">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.651"/>
+							<Node score="0.007300858979252194">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.2300000000000004"/>
+								<Node score="0.01332365421864091">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.6350000000000002"/>
+								</Node>
+							</Node>
+							<Node score="0.004461692375543619">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.941"/>
+							</Node>
+						</Node>
+						<Node score="-0.002837474309171036">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.1130000000000002"/>
+							<Node score="-0.001124209798956607">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3630000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.4950000000000003"/>
+									<Node score="1.282996620490656E-4">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+									</Node>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="-0.005517258728578897">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.7550000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="25">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.006892635452435092">
+						<True/>
+						<Node score="0.00193358269594484">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.7610000000000003"/>
+							<Node score="0.0073104768635858745">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.2980000000000005"/>
+								<Node score="0.01402183106312385">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+								</Node>
+							</Node>
+							<Node score="0.0043036415061549795">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.941"/>
+							</Node>
+						</Node>
+						<Node score="-0.0014766798151730712">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2830000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.4950000000000003"/>
+								<Node score="6.868926122025311E-4">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5870000000000004"/>
+								</Node>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4850000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-0.003463742014102543">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.9330000000000002"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="26">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.007116839999046783">
+						<True/>
+						<Node score="8.317549768249842E-4">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.6450000000000002"/>
+							<Node score="0.004906994998979737">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.055"/>
+								<Node score="0.008716036909068308">
+									<SimplePredicate field="x24" operator="greaterThan" value="2.4650000000000003"/>
+								</Node>
+							</Node>
+							<Node score="0.0023855627183349">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.7950000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.002140074322877381">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.155"/>
+							<Node score="-3.4241236733810216E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.465"/>
+								<Node score="0.0">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.5650000000000002"/>
+									<Node score="8.56877059439477E-5">
+										<SimplePredicate field="x24" operator="greaterThan" value="1.5650000000000002"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="-0.0010087486845766801">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.3350000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.0038433959875760256">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.8750000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="27">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.009379683797239163">
+						<True/>
+						<Node score="0.0013017993324231638">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.659"/>
+							<Node score="0.006683886493536454">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.2980000000000005"/>
+							</Node>
+							<Node score="0.003470241563506379">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.925"/>
+							</Node>
+						</Node>
+						<Node score="-0.002127151874658373">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.1130000000000002"/>
+							<Node score="-4.271772383277366E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4350000000000003"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5610000000000002"/>
+									<Node score="9.958267888373789E-5">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="-0.0010071516685997402">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3250000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.004112563683055533">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.7140000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="28">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.005777254125488073">
+						<True/>
+						<Node score="0.0013675326969774598">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.7250000000000003"/>
+							<Node score="0.005314282422643911">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.3070000000000004"/>
+								<Node score="0.011192816058890179">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+								</Node>
+							</Node>
+							<Node score="0.0032036748108275263">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.9589999999999999"/>
+							</Node>
+						</Node>
+						<Node score="-0.0012297838396708371">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2390000000000003"/>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4950000000000003"/>
+								<Node score="3.339781082448275E-4">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5770000000000002"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="-0.0028525127310817817">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.8850000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="29">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.007919611699810815">
+						<True/>
+						<Node score="5.330990991811961E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.651"/>
+							<Node score="0.0036316674353570836">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.0550000000000006"/>
+								<Node score="0.006997879188018282">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.5030000000000006"/>
+								</Node>
+							</Node>
+							<Node score="0.0016705014656704582">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.7850000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.0017004344219214405">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.1050000000000004"/>
+							<Node score="-2.697662706871995E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.4550000000000003"/>
+								<Node score="0.0">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.5650000000000002"/>
+									<Node score="1.5422661039650213E-5">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="-6.852612193067889E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3470000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.003395537713497096">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.7140000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="30">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.007187649265888634">
+						<True/>
+						<Node score="6.155632490140928E-4">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.6450000000000002"/>
+							<Node score="0.00386968469758172">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.2050000000000005"/>
+								<Node score="0.008892142625395642">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.6950000000000007"/>
+								</Node>
+							</Node>
+							<Node score="0.001978006585803571">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.8050000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.0012753438494302728">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.135"/>
+							<Node score="-1.1001883576378777E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.4750000000000003"/>
+								<Node score="2.2956207523575315E-5">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.5550000000000004"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="-0.0029612370750423532">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.7050000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="31">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0031348909090048345">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.6230000000000004"/>
+							<Node score="0.0030107233776022063">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.0550000000000006"/>
+								<Node score="0.006162562907415596">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.5450000000000004"/>
+								</Node>
+							</Node>
+							<Node score="0.0010773961956201657">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.651"/>
+							</Node>
+						</Node>
+						<Node score="-0.0013031158500493565">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.1050000000000004"/>
+							<Node score="-3.454459982565386E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.401"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5530000000000002"/>
+								</Node>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="32">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="-0.002888276750706426">
+						<True/>
+						<Node score="5.456570041115333E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.6150000000000004"/>
+							<Node score="0.004178981934846552">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.3070000000000004"/>
+							</Node>
+							<Node score="0.001934526129562842">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.8570000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-0.001281566639814749">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.0930000000000002"/>
+							<Node score="-4.1929840609571627E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3470000000000004"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5490000000000006"/>
+								</Node>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="33">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.004310571444853221">
+						<True/>
+						<Node score="2.2515460924339367E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5870000000000004"/>
+							<Node score="0.0026095361548775352">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.0550000000000006"/>
+								<Node score="0.007345319725573063">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.7010000000000005"/>
+								</Node>
+							</Node>
+							<Node score="0.0010071568743489545">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.739"/>
+							</Node>
+						</Node>
+						<Node score="-8.25711954017311E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.1610000000000003"/>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4950000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-0.0018684878340036095">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.8450000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="34">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.002560220646352305">
+						<True/>
+						<Node score="3.242704397187284E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5870000000000004"/>
+							<Node score="0.002664377897889194">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.2250000000000005"/>
+								<Node score="0.006888037180313124">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+								</Node>
+							</Node>
+							<Node score="0.0013377745348516483">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.8070000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-0.0011576309193291913">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.0290000000000001"/>
+							<Node score="-3.723526307865337E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3110000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5490000000000006"/>
+								</Node>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="35">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.005253182331083017">
+						<True/>
+						<Node score="3.8722401167887903E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.6110000000000004"/>
+							<Node score="0.003153843099721157">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.3070000000000004"/>
+							</Node>
+							<Node score="0.001396283605775259">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.8550000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-5.801766797627485E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2210000000000003"/>
+							<Node score="0.0">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.4950000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-0.0015453468486046687">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.7050000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="36">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.002151397374969709">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5870000000000004"/>
+							<Node score="0.001990837460954894">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.1110000000000007"/>
+								<Node score="0.005922471638768911">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+								</Node>
+							</Node>
+							<Node score="7.532856351428158E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.6800000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-8.82661902018452E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.0210000000000001"/>
+							<Node score="-2.0122801332643275E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3570000000000004"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5670000000000004"/>
+								</Node>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="37">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0021704708452368205">
+						<True/>
+						<Node score="3.3268775792176704E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5870000000000004"/>
+							<Node score="0.00283943762744167">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.3750000000000004"/>
+							</Node>
+							<Node score="0.0012244087220420379">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.9100000000000001"/>
+							</Node>
+						</Node>
+						<Node score="-9.026510577562906E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.9590000000000001"/>
+							<Node score="-2.595208649607434E-4">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.2950000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.5650000000000002"/>
+								</Node>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="38">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0024337098677812284">
+						<True/>
+						<Node score="1.5142012285369319E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5770000000000002"/>
+							<Node score="0.0026231753894776742">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.3950000000000005"/>
+							</Node>
+							<Node score="0.0010188677386835945">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.7890000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-8.839322070784421E-4">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.8950000000000001"/>
+							<Node score="-2.486138895753317E-4">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.2850000000000004"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5490000000000006"/>
+								</Node>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="39">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x20"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0040963751134684805">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.5750000000000004"/>
+							<Node score="0.001378327927188069">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.0850000000000004"/>
+								<Node score="0.004312589048317427">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.6850000000000005"/>
+								</Node>
+							</Node>
+							<Node score="4.318192857828034E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.6250000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-4.4861970510290546E-4">
+							<SimplePredicate field="x20" operator="greaterThan" value="1.1450000000000002"/>
+							<Node score="0.0">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.465"/>
+							</Node>
+						</Node>
+						<Node score="-0.0010659924122057398">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.7050000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="40">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x2"/>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.0043484730793772125">
+						<True/>
+						<Node score="1.315998578547418E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5770000000000002"/>
+							<Node score="0.0023758317678023366">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.4430000000000005"/>
+							</Node>
+							<Node score="8.763949855061907E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.8070000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-7.667243787333588E-4">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.8450000000000001"/>
+							<Node score="-1.9790841391533671E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.2910000000000004"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.5530000000000002"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="-4.6440158101696796E-4">
+							<SimplePredicate field="x2" operator="greaterThan" value="284.48500000000007"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="41">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x18"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0017962069394568299">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.5750000000000004"/>
+							<Node score="0.0012441832599031802">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.2250000000000005"/>
+								<Node score="0.0041846346469425885">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+								</Node>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x18" operator="greaterThan" value="1.707"/>
+								<Node score="5.583777170448889E-4">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.735"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="-5.567226405211699E-4">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.9250000000000002"/>
+							<Node score="0.0">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.4150000000000003"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.425"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="42">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.003793127657503847">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="9.314768967813481E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.055"/>
+								<Node score="0.00268675586060463">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.5750000000000006"/>
+								</Node>
+							</Node>
+							<Node score="2.671802224541477E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.5870000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-6.917149721817034E-4">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.8350000000000001"/>
+							<Node score="-1.8490964312267418E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.2590000000000006"/>
+								<Node score="0.0">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.5650000000000002"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x5" operator="greaterThan" value="355.4550000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="43">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x18"/>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0020336903670115525">
+						<True/>
+						<Node score="1.6900856131050606E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="8.860793905793755E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.9589999999999999"/>
+								<Node score="0.003523924025312926">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="-5.49040227095092E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.8510000000000001"/>
+							<Node score="-1.0365184741630161E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3110000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x18" operator="greaterThan" value="1.5930000000000002"/>
+								</Node>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="44">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0028655010673734535">
+						<True/>
+						<Node score="1.8471694657811084E-5">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0013711471184884752">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.2980000000000005"/>
+							</Node>
+							<Node score="4.702784112420186E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.7850000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-2.8089689977939806E-4">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.0850000000000002"/>
+							<Node score="0.0">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.5150000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-6.954543346352536E-4">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.7050000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="45">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x4"/>
+						<MiningField name="x20"/>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="-0.002554000960830465">
+						<True/>
+						<Node score="2.4995090825055868E-5">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.001812543993673696">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.5030000000000006"/>
+							</Node>
+							<Node score="5.338697530274794E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.7850000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-3.0493170229913073E-4">
+							<SimplePredicate field="x20" operator="greaterThan" value="1.0050000000000001"/>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.4350000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-5.946835121314153E-4">
+							<SimplePredicate field="x4" operator="greaterThan" value="217.985"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="46">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0024243281297642023">
+						<True/>
+						<Node score="9.04891067260899E-5">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0018345761582650973">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.5360000000000005"/>
+							</Node>
+							<Node score="5.572412571655256E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.9100000000000001"/>
+							</Node>
+						</Node>
+						<Node score="-1.5230557096656975E-4">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.1850000000000003"/>
+							<Node score="0.0">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.5650000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-5.3227417730963E-4">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.7050000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="47">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x4"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0026510989695569553">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.5850000000000002"/>
+							<Node score="9.04760841532831E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.2050000000000005"/>
+							</Node>
+							<Node score="2.1884821332497623E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.6050000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-2.811934888085547E-4">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.9650000000000001"/>
+							<Node score="0.0">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.425"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x4" operator="greaterThan" value="573.0600000000001"/>
+							</Node>
+						</Node>
+						<Node score="-4.3725734323581984E-4">
+							<SimplePredicate field="x4" operator="greaterThan" value="217.985"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="48">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x1"/>
+						<MiningField name="x18"/>
+						<MiningField name="x20"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-7.343755295261857E-4">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.5650000000000002"/>
+							<Node score="0.0">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.5650000000000004"/>
+								<Node score="0.0024226044404511214">
+									<SimplePredicate field="x1" operator="greaterThan" value="6071.500000000001"/>
+								</Node>
+							</Node>
+							<Node score="4.143023012282451E-4">
+								<SimplePredicate field="x18" operator="greaterThan" value="1.7740000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-1.7534669697189223E-4">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.0950000000000004"/>
+							<Node score="0.0">
+								<SimplePredicate field="x18" operator="greaterThan" value="1.5930000000000002"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.5150000000000003"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x20" operator="greaterThan" value="1.1050000000000002"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="49">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0024709515273571014">
+						<True/>
+						<Node score="6.375608515550749E-5">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0024408561473067566">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+							</Node>
+							<Node score="4.6639983422379133E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.965"/>
+							</Node>
+						</Node>
+						<Node score="-3.075600974508612E-4">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.8350000000000001"/>
+							<Node score="0.0">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.3450000000000004"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x5" operator="greaterThan" value="355.4550000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="50">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x1"/>
+						<MiningField name="x4"/>
+						<MiningField name="x18"/>
+						<MiningField name="x21"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0022845417227542316">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.5850000000000002"/>
+							<Node score="9.737078915439485E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.4150000000000005"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x18" operator="greaterThan" value="1.6010000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x1" operator="greaterThan" value="151.50000000000003"/>
+									<Node score="2.3764573569614057E-4">
+										<SimplePredicate field="x25" operator="greaterThan" value="1.6250000000000002"/>
+									</Node>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="-2.1160612468975253E-4">
+							<SimplePredicate field="x21" operator="greaterThan" value="0.9250000000000002"/>
+							<Node score="0.0">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.4550000000000003"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x4" operator="greaterThan" value="576.1150000000001"/>
+							</Node>
+						</Node>
+						<Node score="-1.7465770671672577E-4">
+							<SimplePredicate field="x4" operator="greaterThan" value="217.985"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="51">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x1"/>
+						<MiningField name="x4"/>
+						<MiningField name="x5"/>
+						<MiningField name="x20"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.002070903841623985">
+						<True/>
+						<Node score="3.4947751245107117E-6">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.5650000000000002"/>
+							<Node score="0.0021125327324485765">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x20" operator="greaterThan" value="1.8350000000000002"/>
+								<Node score="3.6318059100517503E-4">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.8550000000000002"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.9250000000000002"/>
+							<Node score="0.0">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.4150000000000003"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x4" operator="greaterThan" value="561.2150000000003"/>
+							</Node>
+							<Node score="-1.9127064902445755E-4">
+								<SimplePredicate field="x1" operator="greaterThan" value="451.50000000000006"/>
+							</Node>
+						</Node>
+						<Node score="-2.107246321723521E-4">
+							<SimplePredicate field="x5" operator="greaterThan" value="250.81500000000003"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="52">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x2"/>
+						<MiningField name="x18"/>
+						<MiningField name="x20"/>
+						<MiningField name="x21"/>
+					</MiningSchema>
+					<Node score="-4.885613444713821E-4">
+						<True/>
+						<Node score="2.956002715093908E-5">
+							<SimplePredicate field="x20" operator="greaterThan" value="1.5850000000000002"/>
+							<Node score="4.96600206243659E-4">
+								<SimplePredicate field="x21" operator="greaterThan" value="1.9750000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-6.836023662856352E-5">
+							<SimplePredicate field="x18" operator="greaterThan" value="1.1690000000000003"/>
+							<Node score="0.0">
+								<SimplePredicate field="x20" operator="greaterThan" value="1.5550000000000004"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x2" operator="greaterThan" value="494.7100000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="53">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x1"/>
+						<MiningField name="x5"/>
+						<MiningField name="x18"/>
+						<MiningField name="x21"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0018948280605500343">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.5850000000000002"/>
+							<Node score="0.0018616545546067825">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x18" operator="greaterThan" value="1.6010000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x1" operator="greaterThan" value="151.50000000000003"/>
+									<Node score="2.338459214503087E-4">
+										<SimplePredicate field="x25" operator="greaterThan" value="1.6250000000000002"/>
+									</Node>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x21" operator="greaterThan" value="0.9250000000000002"/>
+							<Node score="0.0">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.5650000000000002"/>
+							</Node>
+							<Node score="-1.4063534868045927E-4">
+								<SimplePredicate field="x1" operator="greaterThan" value="1251.5000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-6.708188359386866E-5">
+							<SimplePredicate field="x5" operator="greaterThan" value="259.33000000000004"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="54">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x4"/>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="-7.948279121030304E-4">
+						<True/>
+						<Node score="1.4586563087237952E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="8.080169512688812E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.4530000000000007"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.4210000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-1.9081723365947857E-4">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.8990000000000001"/>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.2590000000000006"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.2670000000000001"/>
+									<Node score="-4.960322846174463E-6">
+										<SimplePredicate field="x4" operator="greaterThan" value="232.87000000000003"/>
+									</Node>
+								</Node>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="55">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x4"/>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.001676318232896917">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0013524155771692014">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.6350000000000002"/>
+							</Node>
+							<Node score="1.779460503885263E-4">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.6150000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-2.022270945436222E-4">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.8350000000000001"/>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.2590000000000006"/>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.2670000000000001"/>
+									<Node score="-4.464916406931405E-6">
+										<SimplePredicate field="x4" operator="greaterThan" value="232.87000000000003"/>
+									</Node>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x4" operator="greaterThan" value="347.43"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="56">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x18"/>
+						<MiningField name="x20"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.0016132485358796727">
+						<True/>
+						<Node score="7.878024167479472E-5">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.5650000000000002"/>
+							<Node score="5.27863809230671E-4">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.2850000000000006"/>
+							</Node>
+						</Node>
+						<Node score="-1.0493638629929903E-4">
+							<SimplePredicate field="x18" operator="greaterThan" value="0.9170000000000001"/>
+							<Node score="0.0">
+								<SimplePredicate field="x20" operator="greaterThan" value="1.5850000000000002"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x5" operator="greaterThan" value="255.53"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="57">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x14"/>
+						<MiningField name="x18"/>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-3.029116490097719E-4">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0014354522617605443">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+							</Node>
+							<Node score="1.6374493434167075E-4">
+								<SimplePredicate field="x18" operator="greaterThan" value="1.715"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2550000000000001"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x14" operator="greaterThan" value="104.45000000000002"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="58">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x4"/>
+						<MiningField name="x21"/>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.0014483711890464362">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="3.398561464397501E-4">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.0350000000000006"/>
+							</Node>
+						</Node>
+						<Node score="-8.073762541215098E-5">
+							<SimplePredicate field="x21" operator="greaterThan" value="0.9250000000000002"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x4" operator="greaterThan" value="217.985"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="59">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x18"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-5.916593446076733E-4">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.5650000000000002"/>
+							<Node score="0.0010500530852146856">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.6350000000000002"/>
+							</Node>
+							<Node score="1.0745143338912137E-4">
+								<SimplePredicate field="x18" operator="greaterThan" value="1.5670000000000004"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.9350000000000002"/>
+							<Node score="0.0">
+								<SimplePredicate field="x18" operator="greaterThan" value="1.6010000000000002"/>
+							</Node>
+							<Node score="-6.571451321565327E-5">
+								<SimplePredicate field="x24" operator="greaterThan" value="0.9450000000000001"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x18" operator="greaterThan" value="0.9170000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="60">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x1"/>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="3.0207999981424818E-5">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.2530000000000006"/>
+								<Node score="4.519928951227931E-4">
+									<SimplePredicate field="x1" operator="greaterThan" value="1201.5000000000002"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2590000000000006"/>
+						</Node>
+						<Node score="-2.4317679353818723E-4">
+							<SimplePredicate field="x1" operator="greaterThan" value="1401.5000000000002"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="61">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x1"/>
+						<MiningField name="x3"/>
+						<MiningField name="x4"/>
+						<MiningField name="x5"/>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-0.0012630686304384235">
+						<True/>
+						<Node score="7.570811086887033E-5">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.5360000000000005"/>
+								<Node score="0.0010632009785768244">
+									<SimplePredicate field="x1" operator="greaterThan" value="6071.500000000001"/>
+								</Node>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x3" operator="greaterThan" value="752.2361759999991"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.8450000000000001"/>
+							<Node score="0.0">
+								<SimplePredicate field="x4" operator="greaterThan" value="178.19000000000003"/>
+								<Node score="0.0">
+									<SimplePredicate field="x1" operator="greaterThan" value="1251.5000000000002"/>
+									<Node score="-7.312735149519252E-5">
+										<SimplePredicate field="x5" operator="greaterThan" value="237.53000000000003"/>
+										<Node score="0.0">
+											<SimplePredicate field="x5" operator="greaterThan" value="570.2600000000001"/>
+										</Node>
+									</Node>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x5" operator="greaterThan" value="297.07500000000005"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="62">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x1"/>
+						<MiningField name="x2"/>
+						<MiningField name="x3"/>
+						<MiningField name="x5"/>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.0012553435954032466">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="2.4238337675593454E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.9589999999999999"/>
+								<Node score="0.0">
+									<SimplePredicate field="x3" operator="greaterThan" value="1131.085016000001"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.8350000000000001"/>
+							<Node score="0.0">
+								<SimplePredicate field="x2" operator="greaterThan" value="224.576"/>
+								<Node score="-7.521772642437906E-5">
+									<SimplePredicate field="x1" operator="greaterThan" value="1251.5000000000002"/>
+									<Node score="0.0">
+										<SimplePredicate field="x22" operator="greaterThan" value="1.5370000000000001"/>
+									</Node>
+									<Node score="0.0">
+										<SimplePredicate field="x2" operator="greaterThan" value="555.5780000000001"/>
+									</Node>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x5" operator="greaterThan" value="355.4550000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="63">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x3"/>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-3.587854801644051E-4">
+						<True/>
+						<Node score="7.197680339790512E-5">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0010380985029489517">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x3" operator="greaterThan" value="752.2361759999991"/>
+							</Node>
+						</Node>
+						<Node score="-3.0675093523221773E-5">
+							<SimplePredicate field="x22" operator="greaterThan" value="0.9670000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="64">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x1"/>
+						<MiningField name="x2"/>
+						<MiningField name="x4"/>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-0.001001467382033857">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.0750000000000006"/>
+								<Node score="2.3116389461119854E-4">
+									<SimplePredicate field="x1" operator="greaterThan" value="301.50000000000006"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.8350000000000001"/>
+							<Node score="0.0">
+								<SimplePredicate field="x2" operator="greaterThan" value="224.576"/>
+								<Node score="0.0">
+									<SimplePredicate field="x24" operator="greaterThan" value="1.4150000000000003"/>
+								</Node>
+								<Node score="-6.455720506911293E-5">
+									<SimplePredicate field="x1" operator="greaterThan" value="451.50000000000006"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x4" operator="greaterThan" value="347.43"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="65">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x20"/>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-8.918255281318492E-4">
+						<True/>
+						<Node score="4.889350278459247E-5">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="7.467076055302354E-4">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.6350000000000002"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x20" operator="greaterThan" value="0.7050000000000001"/>
+							<Node score="-7.009126194152427E-5">
+								<SimplePredicate field="x5" operator="greaterThan" value="212.28500000000003"/>
+								<Node score="0.0">
+									<SimplePredicate field="x25" operator="greaterThan" value="1.3450000000000004"/>
+								</Node>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="66">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x1"/>
+						<MiningField name="x5"/>
+						<MiningField name="x18"/>
+						<MiningField name="x19"/>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="-2.1544506684701613E-4">
+						<True/>
+						<Node score="2.5564258654821402E-5">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.4530000000000007"/>
+								<Node score="0.0">
+									<SimplePredicate field="x19" operator="greaterThan" value="1.5999999999999812E-4"/>
+									<Node score="6.890686166534768E-4">
+										<SimplePredicate field="x1" operator="greaterThan" value="6071.500000000001"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.4210000000000003"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.1870000000000003"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x5" operator="greaterThan" value="488.06"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x18" operator="greaterThan" value="1.2010000000000003"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="67">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x22"/>
+						<MiningField name="x23"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-9.635663387038781E-4">
+						<True/>
+						<Node score="4.2599472393209555E-5">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="8.078980855106447E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+							</Node>
+						</Node>
+						<Node score="-3.7308882172367995E-5">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.8450000000000001"/>
+							<Node score="0.0">
+								<SimplePredicate field="x23" operator="greaterThan" value="0.003900000000000012"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x5" operator="greaterThan" value="349.5700000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="68">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x4"/>
+						<MiningField name="x14"/>
+						<MiningField name="x20"/>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="-1.7880024382750987E-4">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="2.2490807544671196E-4">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.2530000000000006"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2510000000000003"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x14" operator="greaterThan" value="104.45000000000002"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x20" operator="greaterThan" value="1.2050000000000003"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x4" operator="greaterThan" value="483.52000000000004"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="69">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x2"/>
+						<MiningField name="x13"/>
+						<MiningField name="x14"/>
+						<MiningField name="x18"/>
+						<MiningField name="x19"/>
+						<MiningField name="x21"/>
+						<MiningField name="x23"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x18" operator="greaterThan" value="1.6010000000000002"/>
+							<Node score="0.0">
+								<SimplePredicate field="x18" operator="greaterThan" value="1.953"/>
+								<Node score="0.0">
+									<SimplePredicate field="x19" operator="greaterThan" value="1.9999999999999863E-5"/>
+									<Node score="2.2249570572842808E-4">
+										<SimplePredicate field="x13" operator="greaterThan" value="1.0000000180025095E-35"/>
+										<Node score="0.0">
+											<SimplePredicate field="x13" operator="greaterThan" value="9.500000000000002"/>
+										</Node>
+									</Node>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x21" operator="greaterThan" value="0.9250000000000002"/>
+							<Node score="0.0">
+								<SimplePredicate field="x18" operator="greaterThan" value="1.5610000000000002"/>
+							</Node>
+							<Node score="-1.327411617486E-5">
+								<SimplePredicate field="x14" operator="greaterThan" value="76.45000000000002"/>
+							</Node>
+						</Node>
+						<Node score="-8.154282641522801E-4">
+							<SimplePredicate field="x23" operator="greaterThan" value="1.9999999999999996E-4"/>
+							<Node score="0.0">
+								<SimplePredicate field="x2" operator="greaterThan" value="273.834"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="70">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x21"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-7.972263511048135E-4">
+						<True/>
+						<Node score="2.8262512027488112E-5">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.5850000000000002"/>
+							<Node score="6.914748519193381E-4">
+								<SimplePredicate field="x25" operator="greaterThan" value="2.7150000000000003"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x5" operator="greaterThan" value="634.3150000000002"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.0550000000000004"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x21" operator="greaterThan" value="0.9250000000000002"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x5" operator="greaterThan" value="266.64000000000004"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="71">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x21"/>
+						<MiningField name="x22"/>
+						<MiningField name="x23"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.925"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="483.00000000000006"/>
+								</Node>
+								<Node score="7.766776132204821E-4">
+									<SimplePredicate field="x23" operator="greaterThan" value="0.0033040000000000105"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.0550000000000004"/>
+							<Node score="-2.2988462578613817E-7">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.0670000000000004"/>
+							</Node>
+						</Node>
+						<Node score="-9.26997826704442E-4">
+							<SimplePredicate field="x23" operator="greaterThan" value="1.359999999999999E-4"/>
+							<Node score="0.0">
+								<SimplePredicate field="x21" operator="greaterThan" value="0.8650000000000001"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x5" operator="greaterThan" value="357.56500000000005"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="72">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x14"/>
+						<MiningField name="x18"/>
+						<MiningField name="x19"/>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-1.268903292623622E-4">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x25" operator="greaterThan" value="1.965"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="553.7350000000001"/>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x19" operator="greaterThan" value="9.599999999999885E-5"/>
+									<Node score="2.6873444914220484E-4">
+										<SimplePredicate field="x18" operator="greaterThan" value="2.1790000000000007"/>
+									</Node>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2590000000000006"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x14" operator="greaterThan" value="104.45000000000002"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="73">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x18"/>
+						<MiningField name="x19"/>
+						<MiningField name="x22"/>
+						<MiningField name="x23"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="4.459699864811133E-6">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.481000000000001"/>
+								<Node score="4.992433100948638E-4">
+									<SimplePredicate field="x19" operator="greaterThan" value="1.5999999999999812E-4"/>
+								</Node>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.4210000000000003"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.0550000000000004"/>
+						</Node>
+						<Node score="-4.137621945119463E-4">
+							<SimplePredicate field="x23" operator="greaterThan" value="1.359999999999999E-4"/>
+							<Node score="0.0">
+								<SimplePredicate field="x18" operator="greaterThan" value="0.9090000000000001"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="74">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x14"/>
+						<MiningField name="x22"/>
+						<MiningField name="x23"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-1.1979584210333863E-4">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.925"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="483.00000000000006"/>
+								</Node>
+								<Node score="2.564564050449644E-4">
+									<SimplePredicate field="x23" operator="greaterThan" value="9.599999999999885E-5"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2590000000000006"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x14" operator="greaterThan" value="104.45000000000002"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x5" operator="greaterThan" value="488.06"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="75">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x2"/>
+						<MiningField name="x19"/>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-5.959014627170555E-4">
+						<True/>
+						<Node score="7.093355616234476E-4">
+							<SimplePredicate field="x19" operator="greaterThan" value="0.008628000000000002"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.0550000000000004"/>
+							<Node score="1.3426088537669766E-5">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+								<Node score="0.0">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.6650000000000005"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x2" operator="greaterThan" value="232.28600000000003"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="76">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x19"/>
+						<MiningField name="x22"/>
+						<MiningField name="x23"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-6.202935518670353E-4">
+						<True/>
+						<Node score="9.113176660985876E-6">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="4.57000208038286E-4">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.6350000000000002"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x19" operator="greaterThan" value="0.0032560000000000032"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x24" operator="greaterThan" value="0.9350000000000002"/>
+							<Node score="-1.5733784938488414E-6">
+								<SimplePredicate field="x24" operator="greaterThan" value="0.9450000000000001"/>
+								<Node score="0.0">
+									<SimplePredicate field="x23" operator="greaterThan" value="0.003167999999999995"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x5" operator="greaterThan" value="250.81500000000003"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="77">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x4"/>
+						<MiningField name="x5"/>
+						<MiningField name="x21"/>
+						<MiningField name="x23"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.5650000000000002"/>
+							<Node score="0.0">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.925"/>
+								<Node score="0.0">
+									<SimplePredicate field="x4" operator="greaterThan" value="461.86500000000007"/>
+								</Node>
+								<Node score="2.2941342543990833E-4">
+									<SimplePredicate field="x21" operator="greaterThan" value="2.0750000000000006"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.0550000000000004"/>
+						</Node>
+						<Node score="-5.36768832857308E-4">
+							<SimplePredicate field="x23" operator="greaterThan" value="1.359999999999999E-4"/>
+							<Node score="0.0">
+								<SimplePredicate field="x5" operator="greaterThan" value="250.81500000000003"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="78">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x18"/>
+						<MiningField name="x22"/>
+						<MiningField name="x23"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="3.343453511107291E-6">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="4.103165737455484E-4">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.6350000000000002"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2590000000000006"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x18" operator="greaterThan" value="0.9670000000000001"/>
+						</Node>
+						<Node score="-2.4077316169414422E-4">
+							<SimplePredicate field="x23" operator="greaterThan" value="1.359999999999999E-4"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="79">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x17"/>
+						<MiningField name="x19"/>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-9.139182669573562E-5">
+						<True/>
+						<Node score="6.263881484581082E-4">
+							<SimplePredicate field="x19" operator="greaterThan" value="0.008628000000000002"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2590000000000006"/>
+							<Node score="7.787087177736374E-6">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+								<Node score="0.0">
+									<SimplePredicate field="x25" operator="greaterThan" value="2.6650000000000005"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x17" operator="greaterThan" value="104.25000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="80">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x14"/>
+						<MiningField name="x18"/>
+						<MiningField name="x20"/>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-4.4442917681683644E-4">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.925"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="448.7200000000001"/>
+								</Node>
+								<Node score="2.7489323614472743E-4">
+									<SimplePredicate field="x18" operator="greaterThan" value="2.0970000000000004"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x20" operator="greaterThan" value="0.7050000000000001"/>
+							<Node score="0.0">
+								<SimplePredicate field="x5" operator="greaterThan" value="212.28500000000003"/>
+								<Node score="-1.2914505247558369E-5">
+									<SimplePredicate field="x14" operator="greaterThan" value="76.45000000000002"/>
+								</Node>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="81">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x13"/>
+						<MiningField name="x19"/>
+						<MiningField name="x23"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.5650000000000002"/>
+							<Node score="0.0">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.925"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="552.4000000000001"/>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x13" operator="greaterThan" value="9.500000000000002"/>
+								</Node>
+								<Node score="3.277877115475141E-4">
+									<SimplePredicate field="x19" operator="greaterThan" value="2.240000000000006E-4"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="1.0550000000000004"/>
+						</Node>
+						<Node score="-4.491041367658689E-4">
+							<SimplePredicate field="x23" operator="greaterThan" value="1.359999999999999E-4"/>
+							<Node score="0.0">
+								<SimplePredicate field="x5" operator="greaterThan" value="250.81500000000003"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="82">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x19"/>
+						<MiningField name="x21"/>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="-1.752010751091794E-4">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="2.5360000000000005"/>
+								<Node score="5.463407045498686E-4">
+									<SimplePredicate field="x19" operator="greaterThan" value="1.5999999999999812E-4"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2590000000000006"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x21" operator="greaterThan" value="0.9250000000000002"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="83">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x19"/>
+						<MiningField name="x23"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="5.378583748377144E-4">
+							<SimplePredicate field="x19" operator="greaterThan" value="0.008628000000000002"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x24" operator="greaterThan" value="1.0950000000000004"/>
+						</Node>
+						<Node score="-1.3837423092206958E-4">
+							<SimplePredicate field="x23" operator="greaterThan" value="1.359999999999999E-4"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="84">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x10"/>
+						<MiningField name="x14"/>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="-6.848762759696173E-5">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="3.294667814682829E-4">
+								<SimplePredicate field="x24" operator="greaterThan" value="1.925"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="448.7200000000001"/>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x10" operator="greaterThan" value="9.800000000000002"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.2590000000000006"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x14" operator="greaterThan" value="104.45000000000002"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="85">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x4"/>
+						<MiningField name="x14"/>
+						<MiningField name="x22"/>
+						<MiningField name="x23"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="3.1308663555381185E-4">
+								<SimplePredicate field="x24" operator="greaterThan" value="2.6350000000000002"/>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x23" operator="greaterThan" value="1.0399999999999815E-4"/>
+							<Node score="0.0">
+								<SimplePredicate field="x4" operator="greaterThan" value="454.16"/>
+							</Node>
+							<Node score="0.0">
+								<SimplePredicate field="x22" operator="greaterThan" value="1.3190000000000002"/>
+							</Node>
+							<Node score="-8.554203631248012E-5">
+								<SimplePredicate field="x14" operator="greaterThan" value="76.45000000000002"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="86">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x19"/>
+						<MiningField name="x20"/>
+					</MiningSchema>
+					<Node score="-3.9283737379054614E-4">
+						<True/>
+						<Node score="4.715866149966202E-4">
+							<SimplePredicate field="x19" operator="greaterThan" value="0.008628000000000002"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x20" operator="greaterThan" value="0.7050000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="87">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x4"/>
+						<MiningField name="x8"/>
+						<MiningField name="x20"/>
+						<MiningField name="x22"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="-4.384227647208788E-4">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x20" operator="greaterThan" value="1.8350000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x8" operator="greaterThan" value="23.500000000000004"/>
+								</Node>
+								<Node score="3.3522820375213617E-4">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.5360000000000005"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.8450000000000001"/>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x4" operator="greaterThan" value="345.11500000000007"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="88">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x20"/>
+						<MiningField name="x22"/>
+						<MiningField name="x23"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x20" operator="greaterThan" value="1.8350000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="552.4000000000001"/>
+								</Node>
+								<Node score="5.265084630399537E-4">
+									<SimplePredicate field="x24" operator="greaterThan" value="2.5650000000000004"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="-4.412183926082388E-5">
+							<SimplePredicate field="x23" operator="greaterThan" value="7.199999999999854E-5"/>
+							<Node score="0.0">
+								<SimplePredicate field="x5" operator="greaterThan" value="570.2600000000001"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="89">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x20"/>
+						<MiningField name="x22"/>
+						<MiningField name="x23"/>
+						<MiningField name="x24"/>
+						<MiningField name="x25"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x20" operator="greaterThan" value="1.8350000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="552.4000000000001"/>
+								</Node>
+								<Node score="4.7527105178709E-4">
+									<SimplePredicate field="x24" operator="greaterThan" value="2.5650000000000004"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x25" operator="greaterThan" value="0.8450000000000001"/>
+						</Node>
+						<Node score="-3.368417864654451E-4">
+							<SimplePredicate field="x23" operator="greaterThan" value="2.1600000000000024E-4"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="90">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x16"/>
+						<MiningField name="x20"/>
+						<MiningField name="x22"/>
+						<MiningField name="x23"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x20" operator="greaterThan" value="1.8350000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="473.93000000000006"/>
+								</Node>
+								<Node score="5.47894195508246E-4">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.5030000000000006"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x23" operator="greaterThan" value="1.0399999999999815E-4"/>
+							<Node score="-3.5255256189976463E-4">
+								<SimplePredicate field="x16" operator="greaterThan" value="76.25000000000001"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="250.81500000000003"/>
+								</Node>
+								<Node score="0.0">
+									<SimplePredicate field="x22" operator="greaterThan" value="1.0110000000000003"/>
+								</Node>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="91">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x20"/>
+						<MiningField name="x22"/>
+						<MiningField name="x23"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x20" operator="greaterThan" value="1.8350000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="552.4000000000001"/>
+								</Node>
+								<Node score="4.8514189777485687E-4">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.6350000000000002"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="-3.8285821718209274E-5">
+							<SimplePredicate field="x23" operator="greaterThan" value="1.0399999999999815E-4"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="92">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x5"/>
+						<MiningField name="x20"/>
+						<MiningField name="x22"/>
+					</MiningSchema>
+					<Node score="-2.562984319002188E-4">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x20" operator="greaterThan" value="1.8350000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="473.93000000000006"/>
+								</Node>
+								<Node score="4.817628397268815E-4">
+									<SimplePredicate field="x22" operator="greaterThan" value="2.5030000000000006"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x20" operator="greaterThan" value="0.7050000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="93">
+				<True/>
+				<TreeModel functionName="regression" noTrueChildStrategy="returnLastPrediction">
+					<MiningSchema>
+						<MiningField name="x4"/>
+						<MiningField name="x5"/>
+						<MiningField name="x16"/>
+						<MiningField name="x20"/>
+						<MiningField name="x22"/>
+						<MiningField name="x24"/>
+					</MiningSchema>
+					<Node score="0.0">
+						<True/>
+						<Node score="0.0">
+							<SimplePredicate field="x22" operator="greaterThan" value="1.5730000000000006"/>
+							<Node score="0.0">
+								<SimplePredicate field="x20" operator="greaterThan" value="1.8350000000000002"/>
+								<Node score="0.0">
+									<SimplePredicate field="x5" operator="greaterThan" value="552.4000000000001"/>
+								</Node>
+								<Node score="3.602796524935777E-4">
+									<SimplePredicate field="x24" operator="greaterThan" value="2.5650000000000004"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="0.0">
+							<SimplePredicate field="x4" operator="greaterThan" value="468.8350000000001"/>
+						</Node>
+						<Node score="-3.984761427597049E-5">
+							<SimplePredicate field="x16" operator="greaterThan" value="76.25000000000001"/>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+		</Segmentation>
+	</MiningModel>
+</PMML>
