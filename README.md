@@ -1,6 +1,6 @@
 # PredictionOnFlink
   
-This is a guide outlining the process of conducting time-series predictions using Flink.
+This is a guide outlining the process of conducting a toy time-series prediction using Flink.
 
 ## Step 1: Data Generation and Ingestion
 
