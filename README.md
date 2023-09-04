@@ -4,7 +4,7 @@ This is a guide outlining the process of conducting a toy time-series prediction
 
 ## Step 1: Data Generation and Ingestion
 
-To begin the time-series prediction process in Flink, the first step involves sending simulated sensor data to RabbitMQ in JSON format. The JSON structure resembles: { "machineId": 1, "time": 1, "sensorId": 1, "sensorVal": 1, "sensorState": "good", "sensorID": 2, ... }.
+To begin the time-series prediction process in Flink, the first step involves sending simulated sensor data to RabbitMQ in JSON format. The JSON structure resembles: { "machine_id": 1, "time": 1, "sensor_id": 1, "sensor_val": 1, "state": "good", "sensor_id": 2, ... }.
 
 ## Step 2: Stream Processing
 
@@ -22,4 +22,4 @@ involved operators: keyBy/process/map
 
 In the final stage, the predicted results are compared with the original data stream, and the two streams are merged. The merged data is written to both Redis and InfluxDB databases for storage and analysis.
 
-involved operators: CoGroup/where/equalTo/Window/apply/addSink
+involved operators: coGroup/where/equalTo/window/apply/addSink
